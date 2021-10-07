@@ -1,0 +1,10 @@
+<div>
+    <ul> 
+        <li *ngFor="let todoArr of todoArray;" on-click = "removeATodo(todoArr)"> 
+           {{ todoArr }}
+        </li>
+      </ul>
+    <button on-click="clearTodos()">clear Todos</button>
+    <input [(ngModel)]="Todo" placeholder="'enter here"  on-blur="getTodos()">
+
+</div>
